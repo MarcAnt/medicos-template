@@ -61,7 +61,7 @@ const CardInfo = () => {
         alignItems="flex-start"
         my="2"
       >
-        <Box alignSelf="flex-start" flex="20">
+        <Box alignSelf="center" flex="20">
           <Heading as="h6" color="brand.900" size="xs" fontWeight="normal">
             Tipo de paciente
           </Heading>
@@ -70,22 +70,27 @@ const CardInfo = () => {
             bgColor="#FDF6EC"
             color="#7E521E"
             fontSize="7px"
-            px="2"
+            px="3"
+            py="0.5"
             textTransform="capitalize"
             borderRadius="10px"
           >
             Mixto
           </Badge>
         </Box>
-        <Box flex="52">
+        <Stack alignSelf="center" flex="52">
           <Heading as="h6" color="brand.900" size="xs" fontWeight="normal">
             Observaciones
           </Heading>
-          <Text color="#4D4D4F" fontWeight="bold">
+          <Text
+            color="#4D4D4F"
+            fontWeight="bold"
+            style={{ marginTop: "0.2rem" }}
+          >
             Atención para personas mayores de 50 años
           </Text>
-        </Box>
-        <Box flex="30">
+        </Stack>
+        <Box alignSelf="center" flex="30">
           <Button
             bgColor="transparent"
             border="1px"

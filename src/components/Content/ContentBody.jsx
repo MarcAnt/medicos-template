@@ -6,6 +6,7 @@ import HeaderTop from "./HeaderTop/HeaderTop";
 import DescriptionTable from "./MainTable/DescriptionTable";
 import ContentTable from "./MainTable/ContentTable";
 import TitleComponent from "./TitleHeader/TitleComponent";
+import Footer from "./Footer/Footer";
 
 const ContentBody = () => {
   return (
@@ -19,6 +20,9 @@ const ContentBody = () => {
         {/* Main Table */}
         <DescriptionTable />
         <ContentTable />
+      </Box>
+      <Box as="footer">
+        <Footer />
       </Box>
     </Stack>
   );

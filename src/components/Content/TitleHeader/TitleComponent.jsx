@@ -17,7 +17,7 @@ const TitleComponent = () => {
       <Stack flexDir="row" pr="4" justify="center" alignItems="flex-end">
         <Switch mr="3" />
         <Text fontSize="xs" lineHeight="6" fontWeight="bold">
-          Desactivar Horario Médico
+          Desactivar Horario de médico
         </Text>
       </Stack>
     </Stack>

@@ -11,7 +11,13 @@ import Footer from "./Footer/Footer";
 const ContentBody = () => {
   return (
     //Main content
-    <Stack flex="75%">
+    <Stack
+      flex="75%"
+      bgImage="url('./isotipo.png')"
+      bgPos="95% 5%"
+      bgRepeat="no-repeat"
+      bgSize="30% 30%"
+    >
       <Box as="main">
         <HeaderTop />
         <BreadCrumbs />

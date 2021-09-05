@@ -3,6 +3,7 @@ const styles = {
   global: {
     "html, body": {
       bg: "#F3F6FA",
+      overflowX: "hidden",
     },
   },
 };

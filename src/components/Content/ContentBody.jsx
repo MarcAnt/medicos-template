@@ -4,7 +4,7 @@ import BreadCrumbs from "./BreadCrumb/BreadCrumbs";
 import CardInfo from "./CardInfo/CardInfo";
 import HeaderTop from "./HeaderTop/HeaderTop";
 import DescriptionTable from "./MainTable/DescriptionTable";
-import PrincipalTable from "./MainTable/PrincipalTable";
+import ContentTable from "./MainTable/ContentTable";
 import TitleComponent from "./TitleHeader/TitleComponent";
 
 const ContentBody = () => {
@@ -18,7 +18,7 @@ const ContentBody = () => {
         <CardInfo />
         {/* Main Table */}
         <DescriptionTable />
-        <PrincipalTable />
+        <ContentTable />
       </Box>
     </Stack>
   );

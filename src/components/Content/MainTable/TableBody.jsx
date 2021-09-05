@@ -31,26 +31,26 @@ const TableBody = () => {
           <Icon as={BiChevronLeft} />
           <Icon as={BiChevronRight} />
         </Box>
-        <Box bgColor="#F3F6FA" p={3} m={0.5} textAlign="center">
-          <Text>Lun 12</Text>
+        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+          <Text style={{ lineHeight: 2.5 }}>Lun 12</Text>
         </Box>
-        <Box bgColor="#F3F6FA" p={3} m={0.5} textAlign="center">
-          <Text>Lun 13</Text>
+        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+          <Text style={{ lineHeight: 2.5 }}>Lun 13</Text>
         </Box>
-        <Box bgColor="#F3F6FA" p={3} m={0.5} textAlign="center">
-          <Text>Lun 14</Text>
+        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+          <Text style={{ lineHeight: 2.5 }}>Lun 14</Text>
         </Box>
-        <Box bgColor="#F3F6FA" p={3} m={0.5} textAlign="center">
-          <Text>Lun 15</Text>
+        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+          <Text style={{ lineHeight: 2.5 }}>Lun 15</Text>
         </Box>
-        <Box bgColor="#F3F6FA" p={3} m={0.5} textAlign="center">
-          <Text>Lun 16</Text>
+        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+          <Text style={{ lineHeight: 2.5 }}>Lun 16</Text>
         </Box>
-        <Box bgColor="#F3F6FA" p={3} m={0.5} textAlign="center">
-          <Text>Lun 17</Text>
+        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+          <Text style={{ lineHeight: 2.5 }}>Lun 17</Text>
         </Box>
-        <Box bgColor="#F3F6FA" p={3} m={0.5} textAlign="center">
-          <Text>Lun 18</Text>
+        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+          <Text style={{ lineHeight: 2.5 }}>Lun 18</Text>
         </Box>
         {/* End Header */}
 

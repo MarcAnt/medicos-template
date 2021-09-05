@@ -35,22 +35,22 @@ const TableBody = () => {
           <Text style={{ lineHeight: 2.5 }}>Lun 12</Text>
         </Box>
         <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Lun 13</Text>
+          <Text style={{ lineHeight: 2.5 }}>Mar 13</Text>
         </Box>
         <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Lun 14</Text>
+          <Text style={{ lineHeight: 2.5 }}>Mie 14</Text>
         </Box>
         <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Lun 15</Text>
+          <Text style={{ lineHeight: 2.5 }}>Jue 15</Text>
         </Box>
         <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Lun 16</Text>
+          <Text style={{ lineHeight: 2.5 }}>Vie 16</Text>
         </Box>
         <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Lun 17</Text>
+          <Text style={{ lineHeight: 2.5 }}>Sab 17</Text>
         </Box>
         <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Lun 18</Text>
+          <Text style={{ lineHeight: 2.5 }}>Dom 18</Text>
         </Box>
         {/* End Header */}
 

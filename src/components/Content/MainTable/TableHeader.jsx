@@ -16,13 +16,13 @@ const TableHeader = () => {
         flex="20"
         borderTopLeftRadius="10"
         px="10"
-        py="3"
+        py="5"
         textAlign="center"
       >
         <Text
           color="white"
           textTransform="uppercase"
-          fontSize="small"
+          fontSize="md"
           fontWeight="bolder"
         >
           Sede Camacho
@@ -32,7 +32,7 @@ const TableHeader = () => {
         <Text
           textTransform="uppercase"
           color="#4D4D4F"
-          fontSize="small"
+          fontSize="md"
           fontWeight="bolder"
         >
           Sede Jesus Maria Torre I
@@ -42,7 +42,7 @@ const TableHeader = () => {
         <Text
           textTransform="uppercase"
           color="#4D4D4F"
-          fontSize="small"
+          fontSize="md"
           fontWeight="bolder"
         >
           Sede Jesus Maria Torre II
@@ -52,7 +52,7 @@ const TableHeader = () => {
         <Text
           textTransform="uppercase"
           color="#4D4D4F"
-          fontSize="small"
+          fontSize="md"
           fontWeight="bolder"
         >
           Virtual

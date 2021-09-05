@@ -35,7 +35,7 @@ const CardInfo = () => {
             Especialidad
           </Heading>
           <Text color="#4D4D4F" fontWeight="bold">
-            Gariatria
+            Geriatría
           </Text>
         </Box>
         <Box flex="20">

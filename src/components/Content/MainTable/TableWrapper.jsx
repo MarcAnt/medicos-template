@@ -1,7 +1,7 @@
 import { Stack } from "@chakra-ui/layout";
 import React from "react";
 import TableBody from "./TableBody";
-import TableDatePicker from "./TableDatePicker";
+import TableDatePicker from "../DatepickerSection/TableDatePicker";
 
 const TableWrapper = () => {
   //Content for body table and the datepicker

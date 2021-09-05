@@ -1,9 +1,9 @@
 import React from "react";
+import ButtonEdit from "./ButtonEdit";
+
 import Icon from "@chakra-ui/icon";
 import { Box, Grid, GridItem, Stack, Text } from "@chakra-ui/layout";
 import { BiChevronDown, BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import { RiEdit2Line } from "react-icons/ri";
-import { Button } from "@chakra-ui/button";
 
 const TableDatePicker = () => {
   return (
@@ -102,28 +102,8 @@ const TableDatePicker = () => {
           })}
         </Grid>
       </Box>
-
-      <Box>
-        <Button
-          w="100%"
-          size="md"
-          variant="outline"
-          borderRadius="50"
-          bgColor="white"
-          mt="5"
-        >
-          <Icon as={RiEdit2Line} color="#4D4D4F" w="3" h="3" />
-          <Text
-            as="span"
-            color="#4D4D4F"
-            pl="1"
-            fontSize="sm"
-            fontWeight="bolder"
-          >
-            Editar horarios del médico
-          </Text>
-        </Button>
-      </Box>
+      {/* Botón Editar horarios de médicos */}
+      <ButtonEdit />
     </Stack>
   );
 };

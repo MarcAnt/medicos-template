@@ -25,7 +25,7 @@ const BreadCrumbs = () => {
 
       <BreadcrumbItem isCurrentPage>
         <BreadcrumbLink fontWeight="bold" href="#">
-          Manteniento de Horarios
+          Mantenimiento de Horarios
         </BreadcrumbLink>
       </BreadcrumbItem>
     </Breadcrumb>

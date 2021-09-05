@@ -53,20 +53,20 @@ const TableDatePicker = () => {
           {/* HeadRow Datepicker */}
 
           <GridItem colSpan="3"></GridItem>
+
           {Array.from({ length: 30 }, (v, i) => {
             if (i + 1 === 12) {
               return (
                 <GridItem
                   key={i + 1}
                   fontSize="xs"
-                  bgColor="gray.500"
-                  borderRadius="50%"
-                  w={5}
-                  h={5}
                   textAlign="center"
                   color="white"
+                  p="1.5"
                 >
-                  {i + 1}
+                  <Box bgColor="gray.500" borderRadius="50%" w={5} h={5}>
+                    {i + 1}
+                  </Box>
                 </GridItem>
               );
             }
@@ -87,6 +87,7 @@ const TableDatePicker = () => {
                     borderRadius="50%"
                     w={1}
                     h={1}
+                    p="0"
                   ></Box>
                   {i + 1}
                 </GridItem>
@@ -94,7 +95,7 @@ const TableDatePicker = () => {
             }
 
             return (
-              <GridItem key={i + 1} fontSize="xs" textAlign="center">
+              <GridItem key={i + 1} p="1.5" fontSize="xs" textAlign="center">
                 {i + 1}
               </GridItem>
             );

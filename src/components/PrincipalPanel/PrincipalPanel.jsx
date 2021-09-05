@@ -15,7 +15,7 @@ import { Box, Stack } from "@chakra-ui/layout";
 
 const PrincipalPanel = () => {
   return (
-    <Stack bgColor="brand.900" flex="20%" h="100vh" borderTopRightRadius="10">
+    <Stack bgColor="brand.900" flex="8%" borderTopRightRadius="10">
       <Box as="header" bgColor="white" p="10" borderTopRightRadius="10"></Box>
       <Button w="95%" variant="buttonPanel" mb="3">
         <IoHomeOutline />

@@ -2,20 +2,10 @@ import React from "react";
 import Icon from "@chakra-ui/icon";
 import { Box, Grid, Stack, Text } from "@chakra-ui/layout";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import { TableRowOne } from "./TableRows/TableRowOne";
-import { TableRowTwo } from "./TableRows/TableRowTwo";
-import { TableRowThree } from "./TableRows/TableRowThree";
-import { TableRowFour } from "./TableRows/TableRowFour";
-import { TableRowFive } from "./TableRows/TableRowFive";
-import { TableRowSix } from "./TableRows/TableRowSix";
-import { TableRowSeven } from "./TableRows/TableRowSeven";
-import { TableRowEight } from "./TableRows/TableRowEight";
-import { TableRowNine } from "./TableRows/TableRowNine";
-import { TableRowTen } from "./TableRows/TableRowTen";
-import { TableRowElev } from "./TableRows/TableRowElev";
-import { TableRow12 } from "./TableRows/TableRow12";
-import { TableRow13 } from "./TableRows/TableRow13";
 
+import TableRow from "./TableRows/TableRow";
+
+const DAYS = ["Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"];
 const TableBody = () => {
   return (
     <Stack flex="80%">
@@ -31,68 +21,138 @@ const TableBody = () => {
           <Icon as={BiChevronLeft} />
           <Icon as={BiChevronRight} />
         </Box>
-        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Lun 12</Text>
-        </Box>
-        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Mar 13</Text>
-        </Box>
-        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Mie 14</Text>
-        </Box>
-        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Jue 15</Text>
-        </Box>
-        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Vie 16</Text>
-        </Box>
-        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Sab 17</Text>
-        </Box>
-        <Box bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
-          <Text style={{ lineHeight: 2.5 }}>Dom 18</Text>
-        </Box>
+        {Array.from({ length: 7 }, (v, i) => {
+          return (
+            <Box key={i + 1} bgColor="#F3F6FA" p={2} m={0.5} textAlign="center">
+              <Text style={{ lineHeight: 2.5 }}>
+                {DAYS[i]} 1{i + 2}
+              </Text>
+            </Box>
+          );
+        })}
+
         {/* End Header */}
 
-        {/* Row 1 */}
-        <TableRowOne />
-        {/* End Row 1 */}
-        {/* Row 2 */}
-        <TableRowTwo />
-        {/* End Row 2 */}
-        {/* Row 3 */}
-        <TableRowThree />
-        {/* End Row 3 */}
-        {/* Row 4 */}
-        <TableRowFour />
-        {/* End Row 4 */}
-        {/* Row 5 */}
-        <TableRowFive />
-        {/* End Row 5 */}
-        {/* Row 6 */}
-        <TableRowSix />
-        {/* End Row 6 */}
-        {/* Row 7 */}
-        <TableRowSeven />
-        {/* End Row 7 */}
-        {/* Row 8 */}
-        <TableRowEight />
-        {/* End Row 8 */}
-        {/* Row 9 */}
-        <TableRowNine />
-        {/* End Row 9 */}
-        {/* Row 10 */}
-        <TableRowTen />
-        {/* End Row 10 */}
-        {/* Row 11 */}
-        <TableRowElev />
-        {/* End Row 11 */}
-        {/* Row 12 */}
-        <TableRow12 />
-        {/* End Row 12 */}
-        {/* Row 13 */}
-        <TableRow13 />
-        {/* End Row 13 */}
+        {/* TableRow Pseudo-logic  */}
+        {Array.from({ length: 13 }, (v, i) => {
+          if (i + 1 === 2)
+            return (
+              <TableRow
+                key={i + 1}
+                time="8 a.m."
+                hour="8"
+                patient=""
+                color=""
+                bgColor=""
+                specialSchedule={true}
+                canceledSchedule={false}
+              />
+            );
+          if (i + 1 === 4)
+            return (
+              <TableRow
+                key={i + 1}
+                time="10 a.m."
+                hour="10"
+                patient=""
+                color=""
+                bgColor=""
+                specialSchedule={true}
+                canceledSchedule={false}
+              />
+            );
+          if (i + 1 === 5)
+            return (
+              <TableRow
+                key={i + 1}
+                time="11 a.m."
+                hour="11"
+                patient=""
+                color="white"
+                bgColor=""
+                specialSchedule={false}
+                canceledSchedule={false}
+              />
+            );
+
+          if (i + 1 === 6)
+            return (
+              <TableRow
+                key={i + 1}
+                time="12 a.m."
+                hour="12"
+                patient=""
+                color=""
+                bgColor="#F8F8F8"
+                specialSchedule={false}
+                canceledSchedule={false}
+              />
+            );
+          if (i + 1 === 7)
+            return (
+              <TableRow
+                key={i + 1}
+                time="1 p.m."
+                hour="1"
+                patient=""
+                color=""
+                bgColor="#F8F8F8"
+                specialSchedule={false}
+                canceledSchedule={true}
+              />
+            );
+          if (i + 1 === 13)
+            return (
+              <TableRow
+                key={i + 1}
+                time="7 p.m."
+                hour="7"
+                patient=""
+                color=""
+                bgColor="#F8F8F8"
+                specialSchedule={false}
+                canceledSchedule={true}
+              />
+            );
+          if (i + 1 === 12)
+            return (
+              <TableRow
+                key={i + 1}
+                time="6 p.m."
+                hour="6"
+                patient=""
+                color=""
+                bgColor="#F8F8F8"
+                specialSchedule={false}
+                canceledSchedule={false}
+              />
+            );
+          if (i + 1 > 7 && i + 1 < 12)
+            return (
+              <TableRow
+                key={i + 1}
+                time={`${i - 5} p.m.`}
+                hour={i - 5}
+                patient=""
+                color=""
+                bgColor=""
+                specialSchedule={false}
+                canceledSchedule={false}
+              />
+            );
+          return (
+            <TableRow
+              key={i + 1}
+              time={`${7 + i} a.m.`}
+              hour={7 + i}
+              patient="Sin paciente"
+              color=""
+              bgColor=""
+              specialSchedule={true}
+              canceledSchedule={false}
+            />
+          );
+        })}
       </Grid>
     </Stack>
   );

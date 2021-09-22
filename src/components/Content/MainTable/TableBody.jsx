@@ -4,7 +4,7 @@ import { Box, Grid, Stack, Text } from "@chakra-ui/layout";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
 import TableRow from "./TableRows/TableRow";
-import ResponsiveReactGridLayout from "react-grid-layout";
+// import ResponsiveReactGridLayout from "react-grid-layout";
 
 const DAYS = ["Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"];
 

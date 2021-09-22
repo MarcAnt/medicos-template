@@ -17,6 +17,20 @@ const colors = {
   },
 };
 
+const Switch = {
+  variants: {
+    brand: {
+      width: 200,
+      track: {
+        bg: "#87878B",
+        _checked: {
+          bg: "#84BD00",
+        },
+      },
+    },
+  },
+};
+
 const Button = {
   variants: {
     buttonPanel: {
@@ -40,4 +54,9 @@ const fonts = {
   body: "Pt Sans, sans-serif",
 };
 
-export default extendTheme({ styles, colors, fonts, components: { Button } });
+export default extendTheme({
+  styles,
+  colors,
+  fonts,
+  components: { Button, Switch },
+});

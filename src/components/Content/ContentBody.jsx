@@ -14,9 +14,9 @@ const ContentBody = () => {
     <Stack
       flex="75%"
       bgImage="url('./isotipo.png')"
-      bgPos="95% 5%"
+      bgPos="98% 90px"
       bgRepeat="no-repeat"
-      bgSize="30% 30%"
+      bgSize="350px 350px"
     >
       <Box as="main">
         <HeaderTop />

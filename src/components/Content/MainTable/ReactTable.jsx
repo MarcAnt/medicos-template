@@ -46,6 +46,23 @@ export const ReactTable = () => {
         col3: "Data de la tabla",
         col4: "Data de la tabla",
         col5: "Data de la tabla",
+        col6: "Data de la tabla",
+        col7: "Data de la tabla",
+        col8: "Data de la tabla",
+        col9: "Data de la tabla",
+        col10: "Data de la tabla",
+      },
+      {
+        col1: "whatever",
+        col2: "you want",
+        col3: "Data de la tabla",
+        col4: "Data de la tabla",
+        col5: "Data de la tabla",
+        col6: "Data de la tabla",
+        col7: "Data de la tabla",
+        col8: "Data de la tabla",
+        col9: "Data de la tabla",
+        col10: "Data de la tabla",
       },
     ],
     []
@@ -72,6 +89,26 @@ export const ReactTable = () => {
       {
         Header: "Column 5",
         accessor: "col5",
+      },
+      {
+        Header: "Column 6",
+        accessor: "col6",
+      },
+      {
+        Header: "Column 7",
+        accessor: "col7",
+      },
+      {
+        Header: "Column 8",
+        accessor: "col8",
+      },
+      {
+        Header: "Column 9",
+        accessor: "col9",
+      },
+      {
+        Header: "Column 10",
+        accessor: "col10",
       },
     ],
     []

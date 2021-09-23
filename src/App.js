@@ -9,7 +9,7 @@ const App = () => {
       <Grid
         h="100vh"
         templateRows="repeat(2, 1fr)"
-        templateColumns={["1fr", "1fr%", "1fr%", "18% 82%"]}
+        templateColumns={["1fr", "1fr", "1fr", "18% 82%"]}
       >
         <GridItem
           rowSpan={2}

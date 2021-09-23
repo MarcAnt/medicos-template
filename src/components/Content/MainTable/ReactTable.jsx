@@ -61,8 +61,20 @@ export const ReactTable = () => {
         col6: "Data de la tabla",
         col7: "Data de la tabla",
         col8: "Data de la tabla",
-        col9: "Data de la tabla",
-        col10: "Data de la tabla",
+        col9: "dfsdfsfsdfsefefsefsefsefsefsefs",
+        col10: "dfsdfsfsdfsefefsefsefsefsefsefs",
+      },
+      {
+        col1: "whatever",
+        col2: "you want",
+        col3: "Data de la tabla",
+        col4: "Data de la tabla",
+        col5: "Data de la tabla",
+        col6: "Data de la tabla",
+        col7: "Data de la tabla",
+        col8: "Data de la tabla",
+        col9: "dfsdfsfsdfsefefsefsefsefsefsefs",
+        col10: "dfsdfsfsdfsefefsefsefsefsefsefs",
       },
     ],
     []
@@ -105,10 +117,12 @@ export const ReactTable = () => {
       {
         Header: "Column 9",
         accessor: "col9",
+        maxWidth: 10,
       },
       {
         Header: "Column 10",
         accessor: "col10",
+        maxWidth: 10,
       },
     ],
     []
@@ -118,7 +132,7 @@ export const ReactTable = () => {
     useTable({ columns, data });
 
   return (
-    <Box width="100%" p="4">
+    <Box w="100%" p="4">
       <table
         {...getTableProps()}
         style={{ border: "solid 1px blue", width: "100%" }}
@@ -128,7 +142,9 @@ export const ReactTable = () => {
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
                 <th
-                  {...column.getHeaderProps()}
+                  {...column.getHeaderProps({
+                    style: { maxWidth: column.maxWidth },
+                  })}
                   style={{
                     borderBottom: "solid 3px red",
                     background: "aliceblue",
@@ -150,11 +166,16 @@ export const ReactTable = () => {
                 {row.cells.map((cell) => {
                   return (
                     <td
-                      {...cell.getCellProps()}
+                      {...cell.getCellProps({
+                        style: {
+                          maxWidth: cell.column.maxWidth,
+                        },
+                      })}
                       style={{
                         padding: "10px",
                         border: "solid 1px gray",
                         background: "papayawhip",
+                        maxWidth: "10px",
                       }}
                     >
                       {cell.render("Cell")}

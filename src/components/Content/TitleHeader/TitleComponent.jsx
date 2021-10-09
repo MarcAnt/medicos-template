@@ -14,8 +14,20 @@ const TitleComponent = () => {
           del médico
         </Text>
       </Box>
-      <Stack flexDir="row" pr="4" justify="center" alignItems="flex-end">
+      <Stack
+        flexDir="row"
+        pr="4"
+        justify="center"
+        alignItems="flex-end"
+        sx={{
+          label: {
+            "--switch-track-width": "2.7rem",
+            "--switch-track-height": "1.2rem",
+          },
+        }}
+      >
         <Switch mr="3" variant="brand" />
+
         <Text fontSize="xs" lineHeight="6" fontWeight="bold">
           Desactivar Horario de médico
         </Text>

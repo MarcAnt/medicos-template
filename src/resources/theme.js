@@ -18,8 +18,8 @@ const colors = {
 
 const Switch = {
   variants: {
+    base: {},
     brand: {
-      width: 200,
       track: {
         bg: "#87878B",
         _checked: {
@@ -27,6 +27,10 @@ const Switch = {
         },
       },
     },
+  },
+  defaultProps: {
+    size: "md",
+    variant: "brand",
   },
 };
 
